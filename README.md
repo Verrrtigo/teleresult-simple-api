@@ -30,9 +30,10 @@ Use the auxilliary endpoint `GET /orders` to get a list of all orders
 
 Once the server is running, it will be reachable at http://localhost:3000/
 Example URLs for all endpoints:
-http://localhost:3000/orders (post and get)
-http://localhost:3000/orders/13 (get)
-http://localhost:3000/orders/samsung13/2016-09-23 (get)
+
+POST or GET http://localhost:3000/orders
+GET http://localhost:3000/orders/13
+GET http://localhost:3000/orders/samsung13/2016-09-23 
 
 
 The simplest way to call the API is using [Insomnia](https://insomnia.rest/download) or a similar API testing app. Alternatively, you can just navigate to the endpoint URL in your browser to see the response JSON.
