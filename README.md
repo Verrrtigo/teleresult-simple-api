@@ -20,11 +20,20 @@ An order has the following attributes: id, title, date, type, and customer. For 
 }
 
 ```
+The order JSON should be sent in the body request.
 
 The second endpoint `GET /orders/{id}` returns the JSON representation of the orders. ID is any alphanumerical ID that has been assigned on order creation. Example request: `GET /orders/13`
 
-The third endpoint, `GET /orders/{type}/{date}` returns the list of orders of that type and that date, as well as a list of the last 10 orders of that type on that day and a list of customers who made at least one order for this type on this date orders. For example: `GET /orders/iPhone13/{date}`
+The third endpoint, `GET /orders/{type}/{date}` returns the list of orders of that type and that date, as well as a list of the last 10 orders of that type on that day and a list of customers who made at least one order for this type on this date orders. For example: `GET /orders/samsung13/2016-09-23`
 
 Use the auxilliary endpoint `GET /orders` to get a list of all orders
 
+Once the server is running, it will be reachable at http://localhost:3000/
+Example URLs for all endpoints:
+http://localhost:3000/orders (post and get)
+http://localhost:3000/orders/13 (get)
+http://localhost:3000/orders/samsung13/2016-09-23 (get)
+
+
 The simplest way to call the API is using [Insomnia](https://insomnia.rest/download) or a similar API testing app. Alternatively, you can just navigate to the endpoint URL in your browser to see the response JSON.
+
