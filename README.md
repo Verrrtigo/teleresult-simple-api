@@ -27,4 +27,4 @@ The third endpoint, `GET /orders/{type}/{date}` returns the list of orders of th
 
 Use the auxilliary endpoint `GET /orders` to get a list of all orders
 
-The simplest way to call the API is using [Insomnia](https://nodejs.org/en/download/) or a similar app. Alternatively, you can just navigate to the endpoint URL in your browser to see the response JSON.
+The simplest way to call the API is using [Insomnia](https://insomnia.rest/download) or a similar API testing app. Alternatively, you can just navigate to the endpoint URL in your browser to see the response JSON.
