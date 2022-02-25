@@ -1,7 +1,7 @@
 {
     "name": "teleresult-simple-api",
-    "version": "0.0.1",
-    "description": "Initial version",
+    "version": "0.0.2",
+    "description": "Simple demo API",
     "main": "server.js",
     "scripts": {
         "dev": "nodemon server.js"
@@ -10,7 +10,9 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.3",
-        "mongodb": "^4.4.0"
+        "mongodb": "^4.4.0",
+        "swagger-jsdoc": "^6.1.0",
+        "swagger-ui-express": "^4.3.0"
     },
     "devDependencies": {
         "nodemon": "^2.0.15"

@@ -2,8 +2,10 @@ const express = require("express");
 const { type } = require("express/lib/response");
 const mongo = require("mongodb").MongoClient;
 
-const app = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 
+const app = express();
 
 const url = "mongodb+srv://admin:admin@cluster0.vw1lt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
@@ -24,6 +26,7 @@ mongo.connect(
     }
 )
 app.use(express.json());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.post("/orders", (req, res) => {
     let body = req.body;
     orders.insertOne({ id: body.id, title: body.title, date: body.date, type: body.type, customer: body.customer }, (err, result) => {
