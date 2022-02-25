@@ -1,5 +1,4 @@
 const express = require("express");
-const { type } = require("express/lib/response");
 const mongo = require("mongodb").MongoClient;
 
 const swaggerUi = require('swagger-ui-express');
